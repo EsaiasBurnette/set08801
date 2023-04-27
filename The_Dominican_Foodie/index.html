@@ -28,29 +28,39 @@
 	<main>
 
 
-		<div class="slider-container">
-			<div class="slider-images">
-			  <img src="img\main banner.png" alt="Image 1">
-			  <img src="img\logo.jpg" alt="Image 2">
-			  <img src="img\carousel1.png" alt="Image 3">
-			</div>
-			<div class="slider-buttons">
-			  <button class="prev-button">&lt;</button>
-			  <button class="next-button">&gt;</button>
-			</div>
-		  </div>
+		 <!-- Slideshow container -->
+<div class="slideshow-container fade">
+
+	<!-- Full images with numbers and message Info -->
+	<div class="Containers">
+	  <div class="MessageInfo">1 / 3</div>
+	  <img src="img\main banner.png" style="width:100%">
+	</div>
+  
+	<div class="Containers">
+	  <div class="MessageInfo">2 / 3</div>
+	  <img src="img\slidebanner1.png" style="width:100%">
+	</div>
+  
+	<div class="Containers">
+	  <div class="MessageInfo">3 / 3</div>
+	  <img src="img\slidebanner2.png" style="width:100%">
+	</div>
+  
+	<!-- Back and forward buttons -->
+	<a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="forward" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The circles/dots -->
+  <div style="text-align:center">
+	<span class="dots" onclick="currentSlide(1)"></span>
+	<span class="dots" onclick="currentSlide(2)"></span>
+	<span class="dots" onclick="currentSlide(3)"></span>
+  </div> 
 		
 
-<!--
-	<div class="slider-container">
-		<div class="slider-images">
-	  		<img src="img\food1.jpg" alt="Image 1">
-	    </div>
-	</div>
--->
-
-
-	
 		<div class="welcome-p">
 			<h1>The taste of Dominica at your fingertips</h1>
 			<p>Welcome to our site dedicated to showcasing the tantalizing cuisine of the Commonwealth of Dominica! Nestled in the heart of the Eastern Caribbean, 
@@ -101,7 +111,7 @@
 		</div>
 	</main>
 
-	<div class="banner">
+	<div class="word-banner">
 		<h2>NATURAL REMEDIES</h2>
 	  </div>		  
 	  
@@ -140,7 +150,7 @@
 	</div>
 </main>
 
-<div class="banner">
+<div class="word-banner">
 	<h2>VIDEOS</h2>
   </div>		  
   

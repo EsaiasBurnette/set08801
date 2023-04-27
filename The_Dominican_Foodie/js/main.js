@@ -1,29 +1,28 @@
-const sliderImages = document.querySelector('.slider-images');
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
-const imageWidth = sliderImages.clientWidth;
+var slidePosition = 1;
+SlideShow(slidePosition);
 
-let imageIndex = 0;
-
-function slideImages() {
-  sliderImages.style.transform = `translateX(-${imageIndex * imageWidth}px)`;
+// forward/Back controls
+function plusSlides(n) {
+  SlideShow(slidePosition += n);
 }
 
-function nextSlide() {
-  imageIndex++;
-  if (imageIndex > sliderImages.children.length - 1) {
-    imageIndex = 0;
+//  images controls
+function currentSlide(n) {
+  SlideShow(slidePosition = n);
+}
+
+function SlideShow(n) {
+  var i;
+  var slides = document.getElementsByClassName("Containers");
+  var circles = document.getElementsByClassName("dots");
+  if (n > slides.length) {slidePosition = 1}
+  if (n < 1) {slidePosition = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
   }
-  slideImages();
-}
-
-function prevSlide() {
-  imageIndex--;
-  if (imageIndex < 0) {
-    imageIndex = sliderImages.children.length - 1;
+  for (i = 0; i < circles.length; i++) {
+      circles[i].className = circles[i].className.replace(" enable", "");
   }
-  slideImages();
-}
-
-nextButton.addEventListener('click', nextSlide);
-prevButton.addEventListener('click', prevSlide);
+  slides[slidePosition-1].style.display = "block";
+  circles[slidePosition-1].className += " enable";
+} 

@@ -1,16 +1,21 @@
 .slider-container {
+    
     position: relative;
     overflow: hidden;
+    width: 100%;
+    height: 500px;
   }
   
 .slider-images {
     display: flex;
-    transition: transform 0.3s ease-in-out;
+    width: 300%;
+    height: 100%;
   }
   
 .slider-images img {
-    width: 100%;
-    height: auto;
+    width: 33.33%;
+    height: 100%;
+    object-fit: cover;
   }
   
 .slider-buttons {

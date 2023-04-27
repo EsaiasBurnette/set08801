@@ -57,6 +57,25 @@ nav a:hover {
     background-color: #ae965b;
     color: #fff;
   }
+
+
+
+.welcome-p{
+	text-align: center;
+	align-self: center;
+	margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+	line-height: 1.5;
+	color: #333;
+	text-align: center;
+	margin: 2rem auto;
+	max-width: 80%;
+	background-color: rgb(241, 237, 231);
+	padding: 1rem;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
   
 
 .pageLayer {
@@ -98,14 +117,16 @@ nav a:hover {
     color: #fff;
   }
 
-  .banner {
+.word-banner {
     background-image: linear-gradient(to right, #e2cf9f, #ae965b);
     color: #09867c;
     text-align: left;
     padding: 20px;
   }
   
-  .banner h2 {
+.word-banner h2 {
     margin: 0;
   }
-  
+
+
+

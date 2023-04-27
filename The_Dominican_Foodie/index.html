@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<title>The Domincan Foodie</title>
 	<link rel="stylesheet" href="css\main.css">
+	<link rel="stylesheet" href="css\carousel.css">
 </head>
+
 <body>
 	<header>
 		<div class="logo">
@@ -24,11 +26,20 @@
 		</nav>
 	</header>
 	<main>
-		<div class="carousel">
-			<img src="image1.jpg" alt="Image 1">
-			<img src="image2.jpg" alt="Image 2">
-			<img src="image3.jpg" alt="Image 3">
-		</div>
+
+		<div class="slider-container">
+			<div class="slider-images">
+			  <img src="img\food1.jpg" alt="Image 1">
+			  <img src="img\logo.jpg" alt="Image 2">
+			  <img src="img\carousel1.png" alt="Image 3">
+			</div>
+			<div class="slider-buttons">
+			  <button class="prev-button">&lt;</button>
+			  <button class="next-button">&gt;</button>
+			</div>
+		  </div>
+		  
+		  
 
 		<div class="pageLayer">
 			<div class="layer-image">
@@ -63,7 +74,9 @@
 			</div>
 		</div>
 	</main>
-	
+
+	<script src="js\main.js"></script>
+
 	<footer>
 		<p>&copy; 2023 My Website. All rights reserved.</p>
 	</footer>

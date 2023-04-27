@@ -1,0 +1,40 @@
+.slider-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+.slider-images {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.slider-images img {
+    width: 100%;
+    height: auto;
+  }
+  
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.slider-buttons button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+.prev-button {
+    margin-left: 20px;
+  }
+  
+.next-button {
+    margin-right: 20px;
+  }
+  

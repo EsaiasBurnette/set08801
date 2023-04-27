@@ -82,6 +82,8 @@ nav a:hover {
 	display: flex;
 	align-items: center;
 	padding: 50px;
+    padding-right: 150px;
+    padding-left: 150px;
     background-color: rgb(241, 237, 231);
 }
 

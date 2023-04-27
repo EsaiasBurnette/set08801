@@ -91,7 +91,15 @@ nav a:hover {
 .layer-image {
 	flex: 1;
 	margin-right: 50px;
+    background-size: cover;
+    transition: opacity 0.3s ease-in-out;
+    
 }
+
+.layer-image:hover {
+    opacity: 0.8;
+  }
+
 
 .layer-image img {
 	max-width: 100%;

@@ -44,4 +44,3 @@ function shareOnFacebook() {
     var shareUrl = "https://www.linkedin.com/sharing/share-offsite/?url=" + url;
     window.open(shareUrl, '_blank');
   }
-  

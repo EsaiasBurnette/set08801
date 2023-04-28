@@ -213,6 +213,22 @@ nav a:hover {
     background-color: #2d4373;
   }
 
+
+
+
+.sub-page-cookbook ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sub-page-cookbook li {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+
+
   
 
 

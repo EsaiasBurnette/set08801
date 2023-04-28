@@ -52,6 +52,21 @@
   top: 0;
 }
 
+/* Shows the Audio Icon on every screen */
+.audioInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+}
+
+.audioInfo img{
+  width: 100px
+}
+
 /* The circles or bullets and indicators */
 .dots {
   cursor: pointer;

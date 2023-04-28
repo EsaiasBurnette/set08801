@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>The Domincan Foodie</title>
-	<link rel="stylesheet" href="css\main.css">
-	<link rel="stylesheet" href="css\banner_carousel.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/banner_carousel.css">
 </head>
 
 <body>
@@ -15,14 +15,14 @@
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="mainpages\recipes.html">Recipes</a></li>
-				<li><a href="mainpages\food.html">Food</a></li>
-				<li><a href="mainpages\drink.html">Drinks</a></li>
-				<li><a href="mainpages\natural-remedies.html">Natural Remedies</a></li>
-				<li><a href="mainpages\videos.html">Videos</a></li>
-				<li><a href="mainpages\cookbook.html">Cookbook</a></li>
-				<li><a href="mainpages\contact.html">Contact Us</a></li>
-				<li><a href="mainpages\about.html">About</a></li>
+				<li><a href="mainpages/recipes.html">Recipes</a></li>
+				<li><a href="mainpages/food.html">Food</a></li>
+				<li><a href="mainpages/drink.html">Drinks</a></li>
+				<li><a href="mainpages/natural-remedies.html">Natural Remedies</a></li>
+				<li><a href="mainpages/videos.html">Videos</a></li>
+				<li><a href="mainpages/cookbook.html">Cookbook</a></li>
+				<li><a href="mainpages/contact.html">Contact Us</a></li>
+				<li><a href="mainpages/about.html">About</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -35,17 +35,48 @@
 	<!-- Full images with numbers and message Info -->
 	<div class="Containers">
 	  <div class="MessageInfo">1 / 3</div>
-	  <img src="img\main banner.png" style="width:100%">
+	  <img src="img/main banner.png" style="width:100%">
+
+	  <div class="audioInfo">
+		<img src="img/audio.png" onclick="toggleAudio()" alt="Audio icon" id="audio-icon1">
+	</div>
+
+	<!-- Add an audio element with the audio source and id -->
+	<audio id="myAudio">
+		<source src="audiofile.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+
 	</div>
   
 	<div class="Containers">
 	  <div class="MessageInfo">2 / 3</div>
-	  <img src="img\slidebanner1.png" style="width:100%">
+	  <img src="img/slidebanner1.png" style="width:100%">
+
+	  <div class="audioInfo">
+		<img src="img/audio.png" onclick="toggleAudio()" alt="Audio icon" id="audio-icon2">
+	</div>
+
+	<!-- Add an audio element with the audio source and id -->
+	<audio id="myAudio">
+		<source src="audiofile.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
 	</div>
   
 	<div class="Containers">
 	  <div class="MessageInfo">3 / 3</div>
-	  <img src="img\slidebanner2.png" style="width:100%">
+	  <img src="img/slidebanner2.png" style="width:100%">
+
+	  <div class="audioInfo">
+		<img src="img/audio.png" onclick="toggleAudio()" alt="Audio icon" id="audio-icon3">
+	</div>
+
+	<!-- Add an audio element with the audio source and id -->
+	<audio id="myAudio">
+		<source src="audiofile.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
 	</div>
   
 	<!-- Back and forward buttons -->
@@ -80,36 +111,36 @@
 
 		<div class="pageLayer">
 			<div class="layer-image">
-				<a href="subpages\callaloo.html"><img src="img\callaloosoup1.jpg" alt="Food"></a>
+				<a href="subpages/callaloo.html"><img src="img/callaloosoup1.jpg" alt="Food"></a>
 			</div>
 			<div class="pageLayer-content">
 				<h1>Callaloo Soup</h1>
 				<p>Callaloo leaves are the main ingredient in this soup. The leaves are typically cooked down with coconut milk and a variety of spices
 					 such as garlic, onion, thyme, and hot peppers. The soup is then typically seasoned with salt and pepper to taste and served with a side of bread or dumplings. </p>
-					 <a href="subpages\callaloo.html"><button>Get full Recipe</button></a>
+					 <a href="subpages/callaloo.html"><button>Get full Recipe</button></a>
 			</div>
 		</div>
 		
 		<div class="pageLayer">
 			<div class="layer-image">
-				<a href="subpages\pinepunch.html"><img src="img\pineapplepunch1.jpg" alt="Food"></a>
+				<a href="subpages/pinepunch.html"><img src="img/pineapplepunch1.jpg" alt="Food"></a>
 			</div>
 			<div class="pageLayer-content">
 				<h1>Pineapple Punch</h1>
 				<p>Fresh pineapple is blended with sugar, water, and spices such as cinnamon and nutmeg to make a sweet and refreshing drink. The punch is typically served chilled over ice. </p>
-				<a href="subpages\pinepunch.html"><button>Get full Recipe</button></a>
+				<a href="subpages/pinepunch.html"><button>Get full Recipe</button></a>
 			</div>
 		</div>
 
 		<div class="pageLayer">
 			<div class="layer-image">
-				<a href="subpages\crabback.html"><img src="img\crabback1.jpg" alt="Food"></a>
+				<a href="subpages/crabback.html"><img src="img/crabback1.jpg" alt="Food"></a>
 			</div>
 			<div class="pageLayer-content">
 				<h1>Crab Backs</h1>
 				<p>This dish is made by stuffing crab shells with a mixture of crab meat, breadcrumbs, peppers, onions, and other seasonings. 
 					The stuffed shells are then baked until golden brown and served hot. </p>
-					<a href="subpages\crabback.html"><button>Get full Recipe</button></a>
+					<a href="subpages/crabback.html"><button>Get full Recipe</button></a>
 			</div>
 		</div>
 	</main>
@@ -121,37 +152,37 @@
 
 	<div class="pageLayer">
 		<div class="layer-image">
-			<a href="subpages\soursop.html"><img src="img\soursop1.jpg" alt="Food"></a>
+			<a href="subpages/soursop.html"><img src="img/soursop1.jpg" alt="Food"></a>
 		</div>
 		<div class="pageLayer-content">
 			<h1>Soursop Leaf Tea - Immune System Booster</h1>
 			<p>Soursop leaves are commonly used in Dominica to make a tea that is believed to have many health benefits. 
 				It is said to boost the immune system, reduce inflammation, and improve digestion. </p>
-			<a href="subpages\soursop.html"><button>Get full Recipe</button></a>
+			<a href="subpages/soursop.html"><button>Get full Recipe</button></a>
 		</div>
 	</div>
 	
 	<div class="pageLayer">
 		<div class="layer-image">
-			<a href="subpages\lemongrass.html"><img src="img\lemongrass.png" alt="Food"></a>
+			<a href="subpages/lemongrass.html"><img src="img/lemongrass.png" alt="Food"></a>
 		</div>
 		<div class="pageLayer-content">
 			<h1>Fever Grass Tea - Fever and Cold Treatment</h1>
 			<p>Fever grass (lemongrass) is another popular herb used in Dominica to make tea. 
 				It is believed to have anti-inflammatory properties and is commonly used to treat fever and colds. </p>
-			<a href="subpages\lemongrass.html"><button>Get full Recipe</button></a>
+			<a href="subpages/lemongrass.html"><button>Get full Recipe</button></a>
 		</div>
 	</div>
 
 	<div class="pageLayer">
 		<div class="layer-image">
-			<a href="subpages\guavaleaf.html"><img src="img\guavaleaf.jpg" alt="Food"></a>
+			<a href="subpages/guavaleaf.html"><img src="img/guavaleaf.jpg" alt="Food"></a>
 		</div>
 		<div class="pageLayer-content">
 			<h1>Guava Leaf Tea - Blood Pressure Regulator</h1>
 			<p>Guava leaves are used to make a tea that is believed to have many health benefits. 
 				It is said to help lower blood pressure, reduce inflammation, and promote healthy skin.</p>
-				<a href="subpages\guavaleaf.html"><button>Get full Recipe</button></a>
+				<a href="subpages/guavaleaf.html"><button>Get full Recipe</button></a>
 		</div>
 	</div>
 </main>
@@ -163,30 +194,30 @@
 
 <div class="pageLayer">
 	<div class="layer-image">
-		<a href="subpages\streetfood.html"><img src="img\streetfood1.png" alt="Food"></a>
+		<a href="subpages/streetfood.html"><img src="img/streetfood1.png" alt="Food"></a>
 	</div>
 	<div class="pageLayer-content">
 		<h1>DOMINICAN STREET FOOD</h1>
 		<p>Street food in the Commonwealth of Dominica is a vibrant and eclectic cuisine that reflects the island's rich natural resources and cultural diversity. 
 			Dominica's street food scene is largely based on local produce and seafood, which are transformed into delicious and affordable snacks and dishes. 
 			 </p>
-		<a href="subpages\streetfood.html"><button>See Video Details</button></a>
+		<a href="subpages/streetfood.html"><button>See Video Details</button></a>
 	</div>
 </div>
 
 <div class="pageLayer">
 	<div class="layer-image">
-		<a href="subpages\traditionalfood.html"><img src="img\traditionalfood1.png" alt="Food"></a>
+		<a href="subpages/traditionalfood.html"><img src="img/traditionalfood1.png" alt="Food"></a>
 	</div>
 	<div class="pageLayer-content">
 		<h1>DOMINICAN TRADITIONAL FOOD</h1>
 		<p>The traditional food in the Commonwealth of Dominica is a rich and flavorful cuisine that reflects the island's history, culture, and natural resources. 
 			The cuisine is largely based on fresh, locally sourced ingredients, including seafood, vegetables, and fruits. </p>
-			<a href="subpages\traditionalfood.html"><button>See Video Details</button></a>
+			<a href="subpages/traditionalfood.html"><button>See Video Details</button></a>
 	</div>
 </div>
 
-	<script src="js\main.js"></script>
+	<script src="js/main.js"></script>
 
 	<footer>
 		<p>&copy; 2023 The Dominican Foodie. All rights reserved.</p>

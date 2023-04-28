@@ -3,18 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>The Domincan Foodie</title>
-	<link rel="stylesheet" href="..\css\main.css">
-	<link rel="stylesheet" href="..\css\banner_carousel.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/banner_carousel.css">
+    
 </head>
 
 <body>
 	<header>
 		<div class="logo">
-			<a href="..\index.html"><img src="..\img\logo.png" alt="Logo"></a>
+			<a href="../index.html"><img src="../img/logo.png" alt="Logo"></a>
 		</div>
 		<nav>
 			<ul>
-                <li><a href="..\index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
 				<li><a href="recipes.html">Recipes</a></li>
 				<li><a href="food.html">Food</a></li>
 				<li><a href="drink.html">Drinks</a></li>
@@ -30,131 +31,30 @@
 
 	<div class="banner-container">
 		<div class="banner-images">
-	  		<img src="..\img\COOKBOOK.png" alt="Image 1">
+	  		<img src="../img/COOKBOOK.png" alt="Image 1">
 	    </div>
 	</div>
 
-		  <div class="banner">
-			<h2>RECIPES</h2>
-		  </div>		  
-		  
 
-		<div class="pageLayer">
-			<div class="layer-image">
-				<img src="..\img\food1.jpg" alt="Food">
-			</div>
-			<div class="pageLayer-content">
-				<h1>Layer 1</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non massa nisi. Suspendisse eget justo purus. Sed posuere, arcu non pretium rhoncus, lectus felis elementum urna, non euismod nibh velit vel mauris. </p>
-				<button>Get full Recipe</button>
-			</div>
-		</div>
-		
-		<div class="pageLayer">
-			<div class="layer-image">
-				<img src="img\food1.jpg" alt="Food">
-			</div>
-			<div class="pageLayer-content">
-				<h1>Layer 2</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non massa nisi. Suspendisse eget justo purus. Sed posuere, arcu non pretium rhoncus, lectus felis elementum urna, non euismod nibh velit vel mauris. </p>
-				<button>Get full Recipe</button>
-			</div>
-		</div>
+    <div class="sub-page">
+        
+        <div>
+            <h2>Page 1</h2>
+            <button onclick="addToWishList('Item 1')">Add Item 1 to Wishlist</button>
+            <button onclick="addToWishList('Item 2')">Add Item 2 to Wishlist</button>
+          </div>
+          
+          <!-- Page 2 -->
+          <div>
+            <h2>Page 2 - Wishlist</h2>
+            <ul id="wishlist"></ul>
+          </div>
 
-		<div class="pageLayer">
-			<div class="layer-image">
-				<img src="img\food1.jpg" alt="Food">
-			</div>
-			<div class="pageLayer-content">
-				<h1>Layer 3</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non massa nisi. Suspendisse eget justo purus. Sed posuere, arcu non pretium rhoncus, lectus felis elementum urna, non euismod nibh velit vel mauris. </p>
-				<button>Get full Recipe</button>
-			</div>
-		</div>
-	</main>
-
-	<div class="banner">
-		<h2>NATURAL REMEDIES</h2>
-	  </div>		  
-	  
-
-	<div class="pageLayer">
-		<div class="layer-image">
-			<img src="img\food1.jpg" alt="Food">
-		</div>
-		<div class="pageLayer-content">
-			<h1>Layer 1</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non massa nisi. Suspendisse eget justo purus. Sed posuere, arcu non pretium rhoncus, lectus felis elementum urna, non euismod nibh velit vel mauris. </p>
-			<button>Get full Recipe</button>
-		</div>
-	</div>
-	
-	<div class="pageLayer">
-		<div class="layer-image">
-			<img src="img\food1.jpg" alt="Food">
-		</div>
-		<div class="pageLayer-content">
-			<h1>Layer 2</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non massa nisi. Suspendisse eget justo purus. Sed posuere, arcu non pretium rhoncus, lectus felis elementum urna, non euismod nibh velit vel mauris. </p>
-			<button>Get full Recipe</button>
-		</div>
-	</div>
-
-	<div class="pageLayer">
-		<div class="layer-image">
-			<img src="img\food1.jpg" alt="Food">
-		</div>
-		<div class="pageLayer-content">
-			<h1>Layer 3</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non massa nisi. Suspendisse eget justo purus. Sed posuere, arcu non pretium rhoncus, lectus felis elementum urna, non euismod nibh velit vel mauris. </p>
-			<button>Get full Recipe</button>
-		</div>
-	</div>
-</main>
-
-<div class="banner">
-	<h2>VIDOES</h2>
-  </div>		  
-  
-
-<div class="pageLayer">
-	<div class="layer-image">
-		<img src="img\food1.jpg" alt="Food">
-	</div>
-	<div class="pageLayer-content">
-		<h1>Layer 1</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non massa nisi. Suspendisse eget justo purus. Sed posuere, arcu non pretium rhoncus, lectus felis elementum urna, non euismod nibh velit vel mauris. </p>
-		<button>Get full Recipe</button>
-	</div>
-</div>
-
-<div class="pageLayer">
-	<div class="layer-image">
-		<img src="img\food1.jpg" alt="Food">
-	</div>
-	<div class="pageLayer-content">
-		<h1>Layer 2</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non massa nisi. Suspendisse eget justo purus. Sed posuere, arcu non pretium rhoncus, lectus felis elementum urna, non euismod nibh velit vel mauris. </p>
-		<button>Get full Recipe</button>
-	</div>
-</div>
-
-<div class="pageLayer">
-	<div class="layer-image">
-		<img src="img\food1.jpg" alt="Food">
-	</div>
-	<div class="pageLayer-content">
-		<h1>Layer 3</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non massa nisi. Suspendisse eget justo purus. Sed posuere, arcu non pretium rhoncus, lectus felis elementum urna, non euismod nibh velit vel mauris. </p>
-		<button>Get full Recipe</button>
-	</div>
-</div>
-</main>
-
-	<script src="js\main.js"></script>
-
-	<footer>
-		<p>&copy; 2023 My Website. All rights reserved.</p>
-	</footer>
-</body>
-</html>
+    </div>
+    
+    <script src="../js/main.js"></script>
+    <footer>
+        <p>&copy; 2023 The Dominican Foodie. All rights reserved.</p>
+    </footer>
+    </body>
+    </html>

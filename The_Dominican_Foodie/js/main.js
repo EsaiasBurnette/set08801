@@ -26,3 +26,22 @@ function SlideShow(n) {
   slides[slidePosition-1].style.display = "block";
   circles[slidePosition-1].className += " enable";
 } 
+
+function shareOnFacebook() {
+    var url = encodeURIComponent(window.location.href);
+    var shareUrl = "https://www.facebook.com/sharer.php?u=" + url;
+    window.open(shareUrl, '_blank');
+  }
+  
+  function shareOnTwitter() {
+    var url = encodeURIComponent(window.location.href);
+    var shareUrl = "https://twitter.com/intent/tweet?url=" + url;
+    window.open(shareUrl, '_blank');
+  }
+  
+  function shareOnLinkedIn() {
+    var url = encodeURIComponent(window.location.href);
+    var shareUrl = "https://www.linkedin.com/sharing/share-offsite/?url=" + url;
+    window.open(shareUrl, '_blank');
+  }
+  
